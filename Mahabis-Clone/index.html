@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1623055e07.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <section id="mobile-settings" class="h-screen w-screen flex hidden flex-col  bg-white z-40  fixed">
+        <div id="header" class="flex items-center justify-end p-4">
+            <div id="mahabis-logo" class="flex justify-center grow items-center">
+                <img src="assets/logo.png" height="60px" width="100px">
+            </div>
+            <div id="cancel-button">
+                <span class="text-2xl text-black/50 hover:cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+        <hr>
+        <div id="setting-options-mobile" class="flex p-6 items-center text-sm hover:cursor-pointer">
+            <a href="demo.html" target="_self"><p class="grow ">new in</p></a>
+            <span class="text-black/30"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <hr>
+        <div id="setting-options-mobile" class="flex p-6 items-center text-sm hover:cursor-pointer">
+            <a href="demo.html" target="_self"><p class="grow ">men</p></a>
+            <span class="text-black/30"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <hr>
+        <div id="setting-options-mobile" class="flex p-6 items-center text-sm hover:cursor-pointer">
+            <a href="demo.html" target="_self"><p class="grow ">women</p></a>
+            <span class="text-black/30"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <hr>
+        <div id="setting-options-mobile" class="flex p-6 items-center text-sm hover:cursor-pointer">
+            <a href="demo.html" target="_self"><p class="grow ">rewards</p></a>
+            <span class="text-black/30"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <hr>
+        <div id="setting-options-mobile" class="flex p-6 items-center text-sm hover:cursor-pointer">
+            <a href="demo.html" target="_self"><p class="grow ">gifting</p></a>
+            <span class="text-black/30"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <hr>
+        <div id="setting-options-mobile" class="flex p-5 items-center text-sm hover:cursor-pointer">
+            <a href="demo.html" target="_self"><p class="grow ">about us</p></a>
+            <span class="text-black/30"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <hr>
+        <div id="setting-options-mobile" class="flex p-5 items-center text-sm hover:cursor-pointer">
+            <a href="demo.html" target="_self"><p class="grow ">help</p></a>
+            <span class="text-black/30"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <hr>
+        <div id="setting-options-mobile" class="flex p-5 items-center text-sm hover:cursor-pointer">
+            <a href="demo.html" target="_self"><p class="grow ">my account</p></a>
+            <span class="text-black/30"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <hr>
+        <div id="setting-options-mobile" class="flex p-5 items-center text-sm hover:cursor-pointer mb-4">
+            <a href="demo.html" target="_self"><p class="grow ">pakistan (PKR <span class="font-semibold">Rs</span>)</p></a>
+            <span class="text-black/30"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <hr>
+
+        <div id="text" class="p-4 pl-6">
+            <p class="text-center text-xs">Sign up to mahabis for emails about launches & exclusive offers, plus a 10% off welcome discount for new subscribers.</p>
+        </div>
+
+        <div id="sign-button" class="p-4 px-8 flex justify-center items-center">
+            <button class="bg-black p-2  text-white grow border-2 font-semibold border-white/30 hover:cursor-pointer min-w-[350px] max-h-[40px]">SIGN UP</button>
+        </div>
+        
+            
+    </section>
+
+
+    <section id="body" class="overflow-hidden">
+
+        <header>
+            <section id="navbar" class="flex max-h-[60px] md:max-h-[75px]  sticky top-0 bg-white items-center p-2">
+                <div id="setting-icon"><span class="text-xl  hover:cursor-pointer px-2"><i class="fa-solid fa-bars"></span></i></div>
+                <div id="mahabis-logo" class="grow flex justify-center lg:justify-start ">
+                    <img src="assets/logo.png" height="60px" width="100px">
+                </div>
+                <div id="search-cart" class="flex space-x-6">
+                    <div id="search">
+                        <span class="text-xl hover:cursor-pointer"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                    <div id="cart">
+                        <span class="text-xl hover:cursor-pointer"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                </div>
+                <div id="large-screen-options" class="flex space-x-6 text-sm ">
+                    <a href="#best-seller-area"><span class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50 ">New in</span></a>
+                    <span id="men-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50">Men <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
+                    <span id="women-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50">Women <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
+                    <a href="#best-seller-area"><span class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50">Sale</span></a>
+                    <a href="#text-area-clog"><span class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50">rewards</span></a>
+                    <a href="#username"><span class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50">gifting</span></a>
+                    <span id="about-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50">about us <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
+                    <span id="help-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50">Help <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
+                    <a href="#footer"><span class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><i class="fa-regular fa-user"></i></span></a>
+                    <a href="#footer"><span class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><i class="fa-solid fa-magnifying-glass"></i></span></a>
+                    <span id="cart2" class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80 pr-4"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+            </section>
+
+
+            <section id="blank-area" class="h-[30px] md:h-[40px] bg-[#7B7D7C]/10 "></section>
+        </header>
+
+
+        <main>
+            <section id="hero-section" class="mb-8">
+                <img id="hero-image" src="https://cdn.shopify.com/s/files/1/0238/5795/files/homepage_desktop_banner_30_e4eafe8a-24ce-452a-8912-bbd39705c5e1.jpg?v=1717412349"> 
+            </section>
+
+            <!-- https://cdn.shopify.com/s/files/1/0238/5795/files/homepage_banners_mobile_11.jpg?v=1717412349 -->
+
+            
+
+            <section id="hero-text" class="absolute lg:top-[30%] 2xl:top-[57%]  top-[50%] left-[10%] right-[10%] flex flex-col">
+                <div id="hero-text-1" class="flex flex-col justify-center items-center">
+                    <p class="text-[30px] md:text-[40px] md:max-w-[450px] text-center text-[#FFFFFF]/100 font-bold mb-2 ">meet the ultimate summer slipper</p>
+                    <p class="text-[16px] md:text-[18px] text-center text-[#FFFFFF]/100 font-bold">lightweight, breathable comfort</p>
+                    <div class="flex justify-center mt-4 md:mt-6">
+                        <button class="bg-black/100 hover:bg-black/90 max-w-[220px] border-2 border-white/30 text-[11px] md:text-[13px] md:px-4 border-2 border-black/100  text-[#FFFFFF] min-w-[210px] min-h-[46px] p-2 font-semibold m-1">SHOP MAHABIS SOLAR</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="text-area" class="flex flex-col ">
+                <div id="mahabis-heading" class="flex justify-center items-center">
+                    <span class="text-[32px] text-[#000000] font-semibold">mahabis.</span>
+                </div>
+                <div id="text-area" class="flex justify-center items-center p-4">
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ab ducimus dolorem explicabo iste? Fugit.</p>
+                </div>
+                <div id="buttons" class="flex md:justify-center items-center h-[100px] p-6 space-x-6">
+                    <button class="text-sm bg-black/90 border-black/70 border-2 p-2 px-4 grow text-[#FFFFFF] font-semibold min-h-[42px] max-w-[300px] hover:bg-white hover:text-black duration-300">ALL MEN</button>
+                    <button class="text-sm bg-black/90 border-2 border-black/70 duration-300 p-2 px-4 grow font-semibold text-[#FFFFFF] min-h-[42px] max-w-[300px] hover:bg-white hover:text-black">ALL WOMEN</button>
+                </div>
+            </section>
+
+
+
+            <section id="best-seller-area">
+                <div id="options" class="flex justify-evenly items-center p-4 px-6 min-h-[60px] border-b-2 border-black/50">
+                    <a class="hover:cursor-pointer hover:font-semibold duration-75 hover:border-b-2 border-black/50 ">BEST SELLERS</a>
+                    <a class="hover:cursor-pointer hover:font-semibold duration-75 hover:border-b-2 border-black/50">NEW IN</a>
+                    <a class="hover:cursor-pointer hover:font-semibold duration-75 hover:border-b-2 border-black/50">OUTLET</a>
+                </div>
+            </section>
+
+            <section id="product-pictures" class="p-6 flex items-center justify-evenly  overflow-auto">
+                <div id="product-1" class="min-w-[300px] hover:cursor-pointer p-4    duration-300 hover:shadow-2xl shadow-black" >
+                    <img  src="https://mahabis.com/cdn/shop/products/MC-C-DG-SB-2_500x.jpg?v=1602076638">
+                    <p class="text-start font-semibold">Lorem ipsum dolor sit amet.</p>
+                    <p class="text-start font-semibold">Lorem ipsum.</p>
+                    <p class="text-start  py-2">Rs 50,000.00</p>
+                </div>
+
+                <div id="product-1" class="min-w-[300px] hover:cursor-pointer p-4    duration-300 hover:shadow-2xl shadow-black" >
+                    <img  src="https://mahabis.com/cdn/shop/products/MC-C-DG-SB-2_500x.jpg?v=1602076638">
+                    <p class="text-start font-semibold">Lorem ipsum dolor sit amet.</p>
+                    <p class="text-start font-semibold">Lorem ipsum.</p>
+                    <p class="text-start  py-2">Rs 50,000.00</p>
+                </div>
+
+                <div id="product-1" class="min-w-[300px] hover:cursor-pointer p-4    duration-300 hover:shadow-2xl shadow-black" >
+                    <img  src="https://mahabis.com/cdn/shop/products/MC-C-DG-SB-2_500x.jpg?v=1602076638">
+                    <p class="text-start font-semibold">Lorem ipsum dolor sit amet.</p>
+                    <p class="text-start font-semibold">Lorem ipsum.</p>
+                    <p class="text-start  py-2">Rs 50,000.00</p>
+                </div>
+            </section>
+
+
+            <section id="reviews-header" class="p-6 hidden lg:block bg-black/10 h-[10vh]"></section>
+
+            <section id="reviews" class="p-4 my-8 mb-8 bg-[#8A8A8A]/10 flex justify-center items-center flex-col">
+                <div id="stars" class="flex justify-center lg:text-xl my-8 lg:mt-16 space-x-2 items-center">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                    <span><i class="fa-regular fa-star"></i></span>
+                </div>
+
+                <div id="user-review" class="flex flex-col space-y-6 justify-center items-center p-4">
+                    <p class="text-center lg:text-3xl p-8 xl:px-96 font-semibold">
+                        "mahabis curve are the best slippers I have ever owned. so comfortable and everyone comments how stylish they are"
+                    </p>
+                    <p id="username" class=" lg:text-xl">Ben, UK</p>
+                </div>
+            </section>
+
+
+            <section id="images" class="my-6">
+                <div id="slider-image">
+                    <img src="https://mahabis.com/cdn/shop/files/side-to-side-1.webp?v=5492140558729326892" alt="">
+                </div>
+
+                <div id="images-text" class="p-4 justify-center items-center my-2 ">
+                    <p class="text-center font-bold text-xl">we value design</p>
+                    <p class="text-center text-xm text-black/80">but it's what's on the inside that matters</p>
+                </div>
+
+                <div id="image-2" class="mb-6 md:p-32">
+                    <img src="https://cdn.shopify.com/s/files/1/0238/5795/files/homepage_desktop_banner_29_1.jpg?v=1716886230" alt="">
+                </div>
+
+                <div id="text-area-clog" class="flex justify-center p-4 lg:px-32 flex-col">
+                    <div class="flex justify-start items-center space-x-6">
+                        <p class="text-start text-lg">The Sereno Clog</p>
+                        <span class="border-l-2 border-black/50 px-2">Mahabis</span>
+                    </div>
+                    <p class="my-2 text-[14px]">
+                        5 reasons why mahabis sereno are the must-have clogs this summer.
+                    </p>
+                </div>
+
+                <div id="images-area" class="my-6 flex justify-center items-center gap-3 md:gap-10 flex-wrap">
+                    <div class="bg-red-200 hover:bg-red-300 break-word max-w-[170px] md:max-w-[300px] hover:cursor-pointer p-4 duration-300 hover:shadow-2xl " id="img-1">
+                        <img src="https://mahabis.com/cdn/shop/files/4_e781dad7-d451-4aae-b731-32fa7461d8db_1024x1024.jpg?v=1701704415" alt="">
+                    </div>
+                    <div class="bg-red-300 hover:bg-red-400 break-word max-w-[170px] md:max-w-[300px] hover:cursor-pointer p-4    duration-300 hover:shadow-2xl " id="img-1">
+                        <img src="https://mahabis.com/cdn/shop/files/2_3a9b934f-a8b8-451d-bc12-1a1121b3399c_1024x1024.jpg?v=1701704415" alt="">
+                    </div>
+                    <div class="bg-red-400 hover:bg-red-500 break-word max-w-[170px] md:max-w-[300px] hover:cursor-pointer p-4    duration-300 hover:shadow-2xl " id="img-1">
+                        <img src="https://mahabis.com/cdn/shop/files/3_08ca6a0f-ac95-4b38-9f93-cf6ebeaca449_1024x1024.jpg?v=1701704415" alt="">
+                    </div>
+                    <div class="bg-red-500 hover:bg-red-600 break-word max-w-[170px] md:max-w-[300px] hover:cursor-pointer p-4    duration-300 hover:shadow-2xl " id="img-1">
+                        <img src="https://mahabis.com/cdn/shop/files/1_6f395c75-8c0d-451a-b126-d8276a0365af_1024x1024.jpg?v=1701704393" alt="">
+                    </div> 
+                </div>
+
+                <section id="sponsers" class="my-4 bg-black/10">
+                    <div id="sponsers-images"></div>
+                    <div id="div" class="border-b-2 border-black/30 py-2" >.</div>
+                    <div id="awards" class="flex justify-center items-center p-4 my-2">
+                        <p class="text-center text-lg md:text-2xl font-semibold py-4">
+                            "mahabis, an award-winning brand, has considered what it takes to create the most wearable slipper"
+                        </p>
+                    </div>
+                </section>
+
+
+                <section id="rating-area" class="flex justify-center gap-6 my-4 p-2 items-center">
+                    <div id="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p><span class="px-2"><i class="fa-solid fa-meteor"></i></span>Trustpilot</p>
+                </section>
+
+
+                <section id="images" class="flex justify-center items-center p-4 gap-6">
+                    <div id="images-area" class="my-6 flex justify-center items-center gap-3 md:gap-10 flex-wrap">
+                        <div class="bg-red-200 hover:bg-red-300 break-word max-w-[170px] md:max-w-[300px] hover:cursor-pointer p-4    duration-300 hover:shadow-2xl " id="img-1">
+                            <img src="https://cdn.shopify.com/s/files/1/0238/5795/files/1_69e8985a-5a68-4470-8f9d-122ad3f83163.jpg?v=1714475794" alt="">
+                        </div>
+                        <div class="bg-red-300 hover:bg-red-400 break-word max-w-[170px] md:max-w-[300px] hover:cursor-pointer p-4    duration-300 hover:shadow-2xl " id="img-1">
+                            <img src="https://cdn.shopify.com/s/files/1/0238/5795/files/2_a2b45b35-c943-465b-8dc3-beb1b67c8f2a.jpg?v=1714475795" alt="">
+                        </div>
+                        <div class="bg-red-400 hover:bg-red-500 break-word max-w-[170px] md:max-w-[300px] hover:cursor-pointer p-4    duration-300 hover:shadow-2xl " id="img-1">
+                            <img src="https://cdn.shopify.com/s/files/1/0238/5795/files/3_439eaea2-71d4-4626-8400-760944ac3c10.jpg?v=1714475794" alt="">
+                        </div>
+                        <div class="bg-red-500 hover:bg-red-600 break-word max-w-[170px] md:max-w-[300px] hover:cursor-pointer p-4    duration-300 hover:shadow-2xl " id="img-1">
+                            <img src="https://cdn.shopify.com/s/files/1/0238/5795/files/4_b57d6015-7ced-4990-b3cf-456940d24065.jpg?v=1714475795" alt="">
+                        </div> 
+                    </div>
+                </section>
+
+                <section id="payment-methods" class="flex pb-12 flex-wrap justify-center items-center p-4">
+                    <div class="flex justify-center items-center gap-6 flex-wrap min-h-[50px]">
+                        <span class="text-3xl break-word hover:cursor-pointer hover:border-b-2 duration-100 border-black/30"><i class="fa-brands fa-cc-visa"></i></span>
+                        <span class="text-3xl break-word hover:cursor-pointer hover:border-b-2 duration-100 border-black/30"><i class="fa-brands fa-cc-paypal"></i></span>
+                        <span class="text-3xl break-word hover:cursor-pointer hover:border-b-2 duration-100 border-black/30"><i class="fa-solid fa-money-bills"></i></span>
+                        <span class="text-3xl break-word hover:cursor-pointer hover:border-b-2 duration-100 border-black/30"><i class="fa-solid fa-credit-card"></i></span>
+                        <span class="text-4xl break-word hover:cursor-pointer hover:border-b-2 duration-100 border-black/30"><i class="fa-brands fa-apple-pay"></i></span>
+                        <span class="text-4xl break-word hover:cursor-pointer hover:border-b-2 duration-100 border-black/30"><i class="fa-brands fa-amazon-pay"></i></span>
+                        <span class="text-4xl break-word hover:cursor-pointer hover:border-b-2 duration-100 border-black/30"><i class="fa-brands fa-cc-amazon-pay"></i></span>
+                        <span class="text-4xl break-word hover:cursor-pointer hover:border-b-2 duration-100 border-black/30"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+                        <span class="text-4xl break-word hover:cursor-pointer hover:border-b-2 duration-100 border-black/30"><i class="fa-solid fa-money-bill-1-wave"></i></span>
+                        
+                    </div>
+                </section>
+            </main>
+
+            <footer id="footer" class="z-50">
+                <section class="h-[100vh] bg-black flex justify-center items-center">
+                    <p class="text-white/100 text-4xl animate-bounce">! Coming Soon !</p>
+                </section>
+            </footer>
+
+
+        </section>
+
+    </section>
+
+
+
+    <!-- Free from document flow -->
+
+    <!-- Cart -->
+
+    <section >
+        <div id="cart-menu" class="order-info-container p-2  bg-white max-w-[390px] lg:min-w-[450px]  z-10 shadow-sm border-8 border-rose-500 h-[90vh] fixed flex flex-col justify-between top-[10vh] right-[-100%] duration-300 ">
+
+
+            <div class="border-2 shadow-sm grow " id="container-1 ">
+                <div id="close-cart" class="flex justify-end items-center p-4">
+                    <span class="text-xl hover:cursor-pointer hover:scale-110"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+                <div id="heading" class="flex justify-center my-8"><p class="text-xl text-[#808080]">Your Order</p></div>
+    
+                <div id="items-info" class="my-2 flex flex-col justify-center items-center">
+                    <span class="text-[#808080] text-4xl"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <p class="text-sm text-[#808080]">No items added!</p>
+                </div>
+    
+                <div id="items-price" class="my-4 flex justify-end relative" >
+                    <div class="w-1/2 flex justify-between">
+                        <div id="total" class="flex flex-col text-[#808080]">
+                            <p>Sub Total</p>
+                            <p>Grand Total</p>
+                        </div>
+    
+                        <div id="price" class="flex flex-col mx-4 text-[#808080]">
+                            <p>0.0 pkr</p>
+                            <p>0.0 pkr</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="delivery-pickup" class="my-6 flex justify-evenly">
+                    <button class="p-4 px-8 bg-red-300 mx-auto rounded-md hover:bg-red-400 duration-100 text-black/90"><span class="text-md text-black/60 px-auto px-2"><i class="fa-solid fa-truck"></i></span>Delivery</button>
+                    <button class="p-4 px-12 bg-red-300 mx-auto rounded-md hover:bg-red-400 duration-100 text-black/90"><span class="text-lg px-2 text-black/60 px-auto"><i class="fa-solid fa-person-dress"></i></span>Pickup</button>
+                </div>
+    
+                <div id="delivery-area" class="flex justify-center items-center flex-col text-[#808080]">
+                    <p class="text-lg">Please select delivery area to proceed</p>
+                </div>
+    
+                <div id="select-area-button" class="flex justify-center mb-10 my-2">
+                    <button class="bg-none text-[#C40C0C] font-semibold p-1 px-2 border-[1px] border-[#C40C0C]/50 hover:border-[#C40C0C]/100 rounded-md duration-100">Select Area</button>
+                </div>
+            </div>
+    
+    
+            <div id="order-info-container-bottom" class="h-[10vh] bg-[#E8EFCF]" ></div>
+        </div>
+    </section>
+
+
+    <section>
+        <div id="dropdown" class="fixed bg-black bg-black/10 z-50 flex flex-col p-2 min-h-[300px] min-w-[150px] justify-evenly items-center">
+            <div id="close-dropdown" class="p-4 flex justify-end items-center">
+                <span class="text-white hover-scale-150 hover:cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <p class="px-2 p-1 hover:cursor-pointer text-white hover:bg-black/10">Option 1 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
+            <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 2 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
+            <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 3 <span class="text-white  pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
+            <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 4 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
+            <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 5 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -108,28 +108,39 @@ closeCart.addEventListener("click", ()=>{
 // Navbar dropdowns 
 
 
-men.addEventListener("click", ()=>{
+men.addEventListener("click", (e)=>{
+    x = e.clientX;
+    y = e.clientY;
     dropdown.style.top = y + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
 })
 
 
-women.addEventListener("click", ()=>{
+women.addEventListener("click", (e)=>{
+    x = e.clientX;
+    y = e.clientY;
     dropdown.style.top = y + 'px';
     dropdown.style.left = x + 'px';
+    console.log(x,y)
 })
 
 
-help.addEventListener("click", ()=>{
+help.addEventListener("click", (e)=>{
+    x = e.clientX;
+    y = e.clientY;
     dropdown.style.top = y + 'px';
     dropdown.style.left = x + 'px';
+    console.log(x,y)
 })
 
 
-aboutUs.addEventListener("click", ()=>{
+aboutUs.addEventListener("click", (e)=>{
+    x = e.clientX;
+    y = e.clientY;
     dropdown.style.top = y + 'px';
     dropdown.style.left = x + 'px';
+    console.log(x,y)
 })
 
 
@@ -149,11 +160,7 @@ closeDropdown.addEventListener("click", ()=>{
 
 // adding Event listener to get ClientX & ClientY
 
-document.addEventListener("click", (e)=>{
-    x = e.clientX;
-    y = e.clientY;
-    
-})
+
 
 
 

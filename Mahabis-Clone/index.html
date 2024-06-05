@@ -75,7 +75,7 @@
         </div>
 
         <div id="sign-button" class="p-4 px-8 flex justify-center items-center">
-            <a href="login.html" target="_blank"><button class="bg-black p-2  text-white grow border-2 font-semibold border-white/30 hover:cursor-pointer min-w-[350px] max-h-[40px]">SIGN UP</button></a>
+            <button class="bg-black p-2  text-white grow border-2 font-semibold border-white/30 hover:cursor-pointer min-w-[350px] max-h-[40px]">SIGN UP</button>
         </div>
         
             
@@ -107,7 +107,7 @@
                     <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10"><a href="#username">gifting</a></span>
                     <span id="about-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10">about us <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
                     <span id="help-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10">Help <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
-                    <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><a href="login.html" target="_blank"><i class="fa-regular fa-user"></i></a></span>
+                    <span id="user-icon" class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><i class="fa-regular fa-user"></i></span>
                     <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><i class="fa-solid fa-magnifying-glass"></i></span>
                     <span id="cart2" class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80 pr-4"><i class="fa-solid fa-cart-shopping"></i></span>
                 </div>
@@ -318,7 +318,7 @@
     <!-- Cart -->
 
     <section >
-        <div id="cart-menu" class="order-info-container p-2  bg-white max-w-[390px] lg:min-w-[450px]  z-10 shadow-sm border-8 border-rose-500 h-[90vh] fixed flex flex-col justify-between top-[10vh] right-[-100%] duration-300 ">
+        <div id="cart-menu" class="order-info-container p-2  bg-white w-screen lg:max-w-[450px]  z-10 shadow-sm border-8 border-rose-500 h-screen fixed flex flex-col justify-between top-0 right-[-100%] duration-300 ">
 
 
             <div class="border-2 shadow-sm grow " id="container-1 ">
@@ -346,9 +346,9 @@
                     </div>
                 </div>
     
-                <div id="delivery-pickup" class="my-6 flex justify-evenly">
-                    <button class="p-4 px-8 bg-red-300 mx-auto rounded-md hover:bg-red-400 duration-100 text-black/90"><span class="text-md text-black/60 px-auto px-2"><i class="fa-solid fa-truck"></i></span>Delivery</button>
-                    <button class="p-4 px-12 bg-red-300 mx-auto rounded-md hover:bg-red-400 duration-100 text-black/90"><span class="text-lg px-2 text-black/60 px-auto"><i class="fa-solid fa-person-dress"></i></span>Pickup</button>
+                <div id="delivery-pickup" class="my-6 flex">
+                    <button class="p-4 px-6 lg:px-8 bg-red-300 mx-auto rounded-md hover:bg-red-400 duration-100 text-black/90"><span class="text-md px-1 text-black/60 "><i class="fa-solid fa-truck"></i></span>Delivery</button>
+                    <button class="p-4 px-8 lg:px-12 bg-red-300 mx-auto rounded-md hover:bg-red-400 duration-100 text-black/90"><span class="text-lg px-1 text-black/60 "><i class="fa-solid fa-person-dress"></i></span>Pickup</button>
                 </div>
     
                 <div id="delivery-area" class="flex justify-center items-center flex-col text-[#808080]">
@@ -388,6 +388,84 @@
     <section>
         <div id="chat-icon" class="flex p-4 fixed top-[88%] right-[1%]">
             <span class="font-extrabold text-6xl animate-bounce"><i class="fa-solid fa-comment-dots"></i></span>
+        </div>
+    </section>
+
+
+    <!-- login-page -->
+
+    <section id="login-page" class="fixed top-0 bg-white h-screen w-screen right-[-100%] duration-300">
+        <div class=" ">
+
+            <div id="cancel-login-page-button" class="m-2 p-2 flex justify-end items-center">
+                <span id="close-login-page" class="text-3xl px-4 hover:cursor-pointer hover:scale-110"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+            <div class="img-container p-4 flex justify-center items-center">
+                <img class="h-14 w-18 mt-4" src="assets/logo.png" alt="amazon logo">
+            </div>
+    
+    
+            <div class="sign-in flex justify-center items-center ">
+                <div class="sign-area-container min-w-[320px] mb-4 border-[0.08px] shadow-sm shadow-[#D2CECE] border-[#D2CECE] rounded-lg mt-2 w-3/12">
+    
+                    <p class="text-start mt-5 ml-6 m-4 font-medium text-3xl">Sign in</p>
+    
+                    <p class="ml-6 mb-0.5 font-medium">Email or mobile phone number</p>
+                    <input class="ml-6 mb-4 w-10/12 border-[0.5px] border-[#bfbbbb] rounded-[4px] h-8" type="text">
+                    <button class="mb-6 bg-[#FFEF06] hover:bg-[#ffd814] ml-6 w-10/12 rounded-lg p-1 shadow-sm shadow-[#565959]">Continue</button>
+    
+                    <p class="ml-6 mb-5 text-[12px]">By continuing, you agree to amazon's <a href="#" class="text-blue-900">Conditions of</a><br><a href="#" class="text-blue-900">Use</a> and <a href="#"  class="text-blue-900">privacy Notice</a></p>
+    
+                    <p class=" mb-5 ml-6"><a href="#" class="text-blue-900 text-[13px]"><i class="fa-solid fa-caret-right mr-2 text-[10px] text-[#565959] "></i>Need help?</a></p>
+    
+                    <div class="hr-line w-10/12 flex justify-center items-center h-[0.08px] mb-4 bg-[#D2CECE] ml-6"></div>
+    
+                    <p class="ml-6 mb-3 text-[13px] font-semibold">Buying for work?</p>
+                    <p class="ml-6 text-[13px] mb-4 "><a href="#" class="text-blue-900">Shop on mahabis business</a></p>
+    
+                </div>
+            </div>
+    
+    
+            <div class="hr-break flex justify-center  items-start ">
+                <div class="flex justify-center items-center min-w-[340px]  w-3/12 ">
+                    <hr class="flex-grow border-t-2">
+                    <p class="m-2 text-[#767676] text-[12px]">New to Mahabis?</p>
+                    <hr class="flex-grow border-t-2">
+                </div>
+            </div>
+    
+    
+            <div class="button-container flex justify-center  items-center mb-5">
+                <div class="w-3/12 min-w-[320px]">
+                    <button class="w-full text-[#0f1111]  text-[13px] border-2 shadow-sm shadow-[#E1DADA] rounded-lg p-1">create your mahabis account</button>
+                </div>
+            </div>
+    
+    
+            
+    
+            <footer class="bg-[#FAF6F6] ">
+    
+                <hr class="mb-4 shadow-2xl shadow-black">
+    
+                <div class="footer flex justify-center items-center">
+                    <div class="w-3/12 min-w-[320px] flex justify-evenly mb-3">
+                        <a class="text-blue-900 text-[11px]">Conditions of use</a>
+                        <a class="text-blue-800 text-[11px]">Privacy Notice</a>
+                        <a class="text-blue-900 text-[11px]">Help</a>
+                    </div>
+                </div>
+        
+                <div class="copyright flex justify-center items-center">
+                    <div class="w-3/12 min-w-[320px] flex justify-evenly">
+                        <p class="text-[12.5px] mb-8 text-[#555555]">&copy; 1996-2024 mahabis-clone.vercel.app, Inc. or it's affiliates</p>
+                    </div>
+                </div>
+    
+            </footer>
+            
         </div>
     </section>
 

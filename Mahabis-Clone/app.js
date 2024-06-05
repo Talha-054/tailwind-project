@@ -19,6 +19,10 @@ let aboutUs = document.getElementById("about-dropdown");
 let help = document.getElementById("help-dropdown");
 let closeDropdown = document.getElementById("close-dropdown");
 let dropdown = document.getElementById("dropdown");
+let loginPage = document.getElementById("login-page");
+let userButton = document.getElementById("user-icon");
+let signUpButton = document.getElementById("sign-button");
+let closeLogin = document.getElementById("close-login-page");
 
 
 let screenWidth = window.innerWidth;
@@ -158,6 +162,25 @@ closeDropdown.addEventListener("click", ()=>{
 
 
 
+
+// login-page
+
+
+userButton.addEventListener("click", ()=>{
+    loginPage.classList.add("right-0")
+})
+
+
+signUpButton.addEventListener("click", ()=>{
+    mobileSettings.classList.add("hidden");
+    body.style.visibility = "visible";
+    loginPage.classList.add("right-0");
+})
+
+
+closeLogin.addEventListener("click", ()=>{
+    loginPage.classList.remove("right-0");
+})
 
 
 

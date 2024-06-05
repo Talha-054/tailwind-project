@@ -84,7 +84,7 @@
 
     <section id="body" class="overflow-hidden">
 
-        <header>
+        <header class="">
             <section id="navbar" class="flex max-h-[60px] md:max-h-[75px]  sticky top-0 bg-white items-center p-2">
                 <div id="setting-icon"><span class="text-xl  hover:cursor-pointer px-2"><i class="fa-solid fa-bars"></span></i></div>
                 <div id="mahabis-logo" class="grow flex justify-center lg:justify-start ">
@@ -108,7 +108,7 @@
                     <span id="about-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10">about us <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
                     <span id="help-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10">Help <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
                     <span id="user-icon" class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><i class="fa-regular fa-user"></i></span>
-                    <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span id="search2" class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><i class="fa-solid fa-magnifying-glass"></i></span>
                     <span id="cart2" class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80 pr-4"><i class="fa-solid fa-cart-shopping"></i></span>
                 </div>
             </section>
@@ -372,7 +372,7 @@
             <div id="close-dropdown" class="p-4 flex justify-end items-center">
                 <span class="text-black hover-scale-150 hover:cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
             </div>
-            <div id="options" class="">
+            <div id="options" class="grow">
                 <p class="px-2 p-1 hover:cursor-pointer text-white hover:bg-black/10">Option 1 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
                 <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 2 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
                 <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 3 <span class="text-white  pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
@@ -466,6 +466,24 @@
     
             </footer>
             
+        </div>
+    </section>
+
+
+    <!-- search items page -->
+
+    <section >
+        <div id="search-page" class="order-info-container p-2  bg-white w-screen lg:max-w-[450px]  z-10 shadow-sm border-8 border-rose-500 h-screen fixed flex flex-col justify-between top-0 right-[-100%] duration-300 ">
+            <div class="border-2 shadow-sm p-8 grow flex flex-col " id="container-1 ">
+                <div id="close-search-page" class="flex justify-end items-center p-4">
+                    <span class="text-xl hover:cursor-pointer hover:scale-110"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+                <div id="heading" class="flex justify-center my-8"><p class="text-2xl text-black font-semibold">Search</p></div>
+    
+                <div id="items-info" class="my-2 flex  justify-center p-2 grow items-start">
+                    <input type="text" placeholder="search here" class="border-[1px] grow p-4 block  ">
+                </div>
+            <div id="container-bottom" class="h-[10vh] bg-[#E8EFCF]" ></div>
         </div>
     </section>
 

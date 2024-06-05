@@ -23,7 +23,10 @@ let loginPage = document.getElementById("login-page");
 let userButton = document.getElementById("user-icon");
 let signUpButton = document.getElementById("sign-button");
 let closeLogin = document.getElementById("close-login-page");
-
+let searchPage = document.getElementById("search-page");
+let closeSearch = document.getElementById("close-search-page");
+let searchButton = document.getElementById("search");
+let searchButton2 = document.getElementById("search2");
 
 let screenWidth = window.innerWidth;
 let x;
@@ -181,6 +184,29 @@ signUpButton.addEventListener("click", ()=>{
 closeLogin.addEventListener("click", ()=>{
     loginPage.classList.remove("right-0");
 })
+
+
+
+
+// search page
+
+searchButton.addEventListener("click", ()=>{
+    searchPage.classList.add("right-0")
+})
+
+
+searchButton2.addEventListener("click", ()=>{
+    searchPage.classList.add("right-0")
+})
+
+
+closeSearch.addEventListener("click", ()=>{
+    searchPage.classList.remove("right-0");
+})
+
+
+
+
 
 
 

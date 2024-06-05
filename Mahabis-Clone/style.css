@@ -13,3 +13,8 @@ body::-webkit-scrollbar {
 html {
     scroll-behavior: smooth;
 }
+
+
+input:focus {
+    border: .5px solid rgba(245, 245, 245, 0.514);
+}

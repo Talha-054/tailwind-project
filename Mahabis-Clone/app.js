@@ -43,9 +43,15 @@ let isCartActive;
 function navBar (){
     if(screenWidth <= 800){
         pcOptions.style.display = "none";
+        settings.style.display = "";
+        mobileOptions.style.display = "";
+        
+        console.log("reached")
     }else if (screenWidth > 800 ){
         settings.style.display = "none";
         mobileOptions.style.display = "none";
+        pcOptions.style.display = "";
+        console.log("reached")
     }
 }
 
@@ -57,7 +63,6 @@ function heroImage (){
         hero_img.attributes.src.nodeValue = "https://cdn.shopify.com/s/files/1/0238/5795/files/homepage_banners_mobile_11.jpg?v=1717412349";
     }else {
         hero_img.attributes.src.nodeValue = "https://cdn.shopify.com/s/files/1/0238/5795/files/homepage_desktop_banner_30_e4eafe8a-24ce-452a-8912-bbd39705c5e1.jpg?v=1717412349";
-        settings.style.visibility = "hidden";
     }
 }
 
@@ -111,7 +116,7 @@ closeCart.addEventListener("click", ()=>{
 men.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
-    dropdown.style.top = (y+25) + 'px';
+    dropdown.style.top = (y+20) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
 })
@@ -120,7 +125,7 @@ men.addEventListener("click", (e)=>{
 women.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
-    dropdown.style.top = (y+25) + 'px';
+    dropdown.style.top = (y+20) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
 })
@@ -129,7 +134,7 @@ women.addEventListener("click", (e)=>{
 help.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
-    dropdown.style.top = (y+25) + 'px';
+    dropdown.style.top = (y+20) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
 })
@@ -138,7 +143,7 @@ help.addEventListener("click", (e)=>{
 aboutUs.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
-    dropdown.style.top = (y+25) + 'px';
+    dropdown.style.top = (y+20) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
 })
@@ -158,7 +163,15 @@ closeDropdown.addEventListener("click", ()=>{
 
 
 
-// adding Event listener to get ClientX & ClientY
+// adding listener for resize to adjust heroImage, navbar
+
+window.addEventListener("resize", ()=>{
+    screenWidth = window.innerWidth
+    navBar();
+    heroImage();
+    console.log(screenWidth)
+});
+
 
 
 

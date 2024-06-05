@@ -98,17 +98,17 @@
                         <span class="text-xl hover:cursor-pointer"><i class="fa-solid fa-cart-shopping"></i></span>
                     </div>
                 </div>
-                <div id="large-screen-options" class="flex space-x-6 text-sm ">
-                    <span class=" hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50 "><a href="#best-seller-area">New in</a></span>
-                    <span id="men-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50">Men <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
-                    <span id="women-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50">Women <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
-                    <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50"><a href="#best-seller-area">Sale</a></span>
-                    <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50"><a href="#text-area-clog">rewards</a></span>
-                    <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50"><a href="#username">gifting</a></span>
-                    <span id="about-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50">about us <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
-                    <span id="help-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/50">Help <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
-                    <a href="#footer"><span class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><i class="fa-regular fa-user"></i></span></a>
-                    <a href="#footer"><span class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><i class="fa-solid fa-magnifying-glass"></i></span></a>
+                <div id="large-screen-options" class="flex space-x-6 min-w-[780px] text-sm ">
+                    <span class=" hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10 "><a href="#best-seller-area">New in</a></span>
+                    <span id="men-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10">Men <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
+                    <span id="women-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10">Women <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
+                    <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10"><a href="#best-seller-area">Sale</a></span>
+                    <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10"><a href="#text-area-clog">rewards</a></span>
+                    <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10"><a href="#username">gifting</a></span>
+                    <span id="about-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10">about us <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
+                    <span id="help-dropdown" class="hover:cursor-pointer hover:font-semibold duration-100 hover:border-b-2 border-black/10">Help <span class="text-xs text-black/30 px-1"><i class="fa-solid fa-chevron-down"></i></span></span>
+                    <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><i class="fa-regular fa-user"></i></span>
+                    <span class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80"><i class="fa-solid fa-magnifying-glass"></i></span>
                     <span id="cart2" class="hover:cursor-pointer hover:font-semibold duration-100 hover:scale-105 text-xl text-black/80 pr-4"><i class="fa-solid fa-cart-shopping"></i></span>
                 </div>
             </section>
@@ -367,15 +367,17 @@
 
 
     <section>
-        <div id="dropdown" class="fixed bg-black bg-black/10 backdrop-blur-md z-50 flex flex-col p-2 min-h-[300px] min-w-[150px] justify-evenly items-center">
+        <div id="dropdown" class="absolute hidden md:block top-[-100%] bg-black bg-black/10 backdrop-blur-md z-50 flex flex-col p-2 min-h-[300px] min-w-[150px] justify-evenly items-center">
             <div id="close-dropdown" class="p-4 flex justify-end items-center">
                 <span class="text-black hover-scale-150 hover:cursor-pointer"><i class="fa-solid fa-xmark"></i></span>
             </div>
-            <p class="px-2 p-1 hover:cursor-pointer text-white hover:bg-black/10">Option 1 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
-            <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 2 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
-            <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 3 <span class="text-white  pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
-            <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 4 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
-            <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 5 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
+            <div id="options" class="">
+                <p class="px-2 p-1 hover:cursor-pointer text-white hover:bg-black/10">Option 1 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
+                <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 2 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
+                <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 3 <span class="text-white  pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
+                <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 4 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
+                <p class="px-2 p-1 text-white hover:cursor-pointer hover:bg-black/10">Option 5 <span class="text-white pl-6"><i class="fa-solid fa-chevron-right"></i></span></p>
+            </div>
         </div>
     </section>
 

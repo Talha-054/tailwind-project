@@ -111,7 +111,7 @@ closeCart.addEventListener("click", ()=>{
 men.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
-    dropdown.style.top = y + 'px';
+    dropdown.style.top = (y+25) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
 })
@@ -120,7 +120,7 @@ men.addEventListener("click", (e)=>{
 women.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
-    dropdown.style.top = y + 'px';
+    dropdown.style.top = (y+25) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
 })
@@ -129,7 +129,7 @@ women.addEventListener("click", (e)=>{
 help.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
-    dropdown.style.top = y + 'px';
+    dropdown.style.top = (y+25) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
 })
@@ -138,7 +138,7 @@ help.addEventListener("click", (e)=>{
 aboutUs.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
-    dropdown.style.top = y + 'px';
+    dropdown.style.top = (y+25) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
 })

@@ -18,3 +18,11 @@ html {
 input:focus {
     border: .5px solid rgba(245, 245, 245, 0.514);
 }
+
+.text-shadow {
+    text-shadow: 1px 1px #000;
+}
+
+.letter-spacing {
+    letter-spacing: 1px;
+}

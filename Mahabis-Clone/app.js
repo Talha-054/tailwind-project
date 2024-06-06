@@ -123,6 +123,7 @@ closeCart.addEventListener("click", ()=>{
 men.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
+    dropdown.classList.remove("hidden");
     dropdown.style.top = (y+20) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
@@ -132,6 +133,7 @@ men.addEventListener("click", (e)=>{
 women.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
+    dropdown.classList.remove("hidden");
     dropdown.style.top = (y+20) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
@@ -141,6 +143,7 @@ women.addEventListener("click", (e)=>{
 help.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
+    dropdown.classList.remove("hidden");
     dropdown.style.top = (y+20) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
@@ -150,6 +153,7 @@ help.addEventListener("click", (e)=>{
 aboutUs.addEventListener("click", (e)=>{
     x = e.clientX;
     y = e.clientY;
+    dropdown.classList.remove("hidden");
     dropdown.style.top = (y+20) + 'px';
     dropdown.style.left = x + 'px';
     console.log(x,y)
@@ -157,6 +161,7 @@ aboutUs.addEventListener("click", (e)=>{
 
 
 closeDropdown.addEventListener("click", ()=>{
+    dropdown.classList.add("hidden");
     dropdown.style.top = null;
     dropdown.style.left = null;
     x = 0;
